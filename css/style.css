@@ -1,0 +1,37 @@
+#html
+{
+	height:100%;
+	background-size:cover;
+	background-image:url();
+	background-repeat:no-repeat;
+
+}
+body
+{
+  background-color:transparent;
+  font-family: 'Ubuntu',sans-serif;
+  color: black;
+}
+.box
+{
+	border: 2px solid black;
+	border-radius:15px;
+	height:300px;
+	width:600px;
+	margin:500px 0 0 90px;
+	padding:0 0 2em 2em;
+	opacity:.7;
+}
+.temp{color:red;
+font-size:2em;
+}
+
+.temp:hover{text-decoration:underline;}
+h1
+{
+	font-size:32pt;
+}
+h3{margin:10px 10px}
+.temp{margin-left:50px}
+.origin{margin-left:100px;}
+.status{margin-left:200px;}
