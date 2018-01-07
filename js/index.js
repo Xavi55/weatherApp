@@ -46,7 +46,7 @@ function getLocation()
 				  {
 				  	cel=data.main.temp;
 				  	x[0].innerHTML=(Math.round((cel*(9/5)+32)*10)/10+" &deg;F");
-				  	y[0].innerHTML=data.name+','+data.sys.country;
+				  	y[0].innerHTML=data.name+', '+data.sys.country;
 					z[0].innerHTML=data.weather[0].main;
 					//x[0]??? temp class is unique?
 
