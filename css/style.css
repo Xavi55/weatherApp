@@ -14,13 +14,15 @@ body
 }
 .box
 {
+	background-color:black;
+	color:white;
 	border: 2px solid black;
 	border-radius:15px;
 	height:300px;
 	width:600px;
 	margin:500px 0 0 90px;
 	padding:0 0 2em 2em;
-	opacity:.7;
+	opacity:.8;
 }
 .temp{color:red;
 font-size:2em;
