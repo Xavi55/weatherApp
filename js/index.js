@@ -5,10 +5,12 @@ var z=document.getElementsByClassName("status");
 
 var cel;
 var d=new Date();
-if(d.getHours()>=12)
+if(d.getHours()>=11)
 	w[0].innerHTML="Good afternoon, it is now:";
 else
 	w[0].innerHTML="Good morning, it is now:";
+
+alert('Please turn on or allow your location services');
 
 getLocation();
 
@@ -35,9 +37,9 @@ function getLocation()
 		navigator.geolocation.getCurrentPosition(function(a)
 		{
 			var lat=a.coords.latitude
-			var long=a.coords.longitude;
+			var longi=a.coords.longitude;
 
-			getJSON('https://fcc-weather-api.glitch.me/api/current?lat='+lat+'&lon='+long, 					function(err, data)
+			getJSON('https://fcc-weather-api.glitch.me/api/current?lat='+lat+'&lon='+longi, 					function(err, data)
 			{
 				  if (err !== null)
 				  	alert('Something went wrong: ' + err);
@@ -55,9 +57,7 @@ function getLocation()
 					document.getElementById("html").style.backgroundImage="url('"+json.data[0].images.original.url+"')"
 						//change the background
 					});
-
 				  }
-
 			});
 		});
 
@@ -78,5 +78,4 @@ function convert()
 		x[0].innerHTML=(Math.round((cel*(9/5)+32)*10)/10+" &deg;F");
 		num=0;
 	}
-
 }
